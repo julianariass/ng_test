@@ -27,5 +27,4 @@ jobs:
       - name: Deploy to GitHub Pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          npx angular-cli-ghpages --dir=dist/ng_test --name="julianariass" --email="julianbenjaminramirezarias06@gmail.com" --repo=https://github.com/julianariass/ng_test.git
+        run: npx angular-cli-ghpages --dir=dist/ng_test --no-silent
